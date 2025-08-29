@@ -1,0 +1,298 @@
+<!--Part 1: Basic Structure
+Task 1: Create an HTML file with basic structure (<!DOCTYPE html>, <html>, <head>, <title>, <body>).-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Priyanshi</title>
+</head>
+<body style="font-family:Arial, sans-serif; margin:20px;">
+
+<!--Part 2: Header Section
+Task 2: Add your name and tagline using <h1> and <h3>.
+Task 3: Insert a profile picture (<img>).-->
+    <h1 style="color:darkblue; text-align:center;">Priyanshi</h1>
+    <h3 style="color:gray; text-align:center;">Aspiring Software Engineer | B.Tech Student</h3>
+    <div style="text-align:center;">
+        <img src="/HTML/Assignment/Assignment1/priyanshi111.jpg" alt="Profile Picture" style="width:150px; height:150px; border-radius:50%;">
+
+    </div>
+    <hr>
+ <section>
+<!--Part 3: Contact Section
+Task 4: Add contact info (email, phone, LinkedIn) using <ul> or <dl>.-->
+    <h2 style="color:darkred;">Contact Information</h2>
+    <ul>
+        <li><b>Email:</b> tomarpriyanshi9259@gmail.com</li>
+        <li><b>Phone:</b> +91 9259111465</li>
+        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/priyanshi-tomar-412247329/" target="_blank"https:"//www.linkedin.com/in/priyanshi-tomar-412247329/">/</a></li>
+    </ul>
+    <hr>
+</section>
+
+ <section>
+<!--Part 4: About Me
+Task 5: Write a short intro with <p>, highlight text with <b>, <i>, <u>.-->
+    <h2 style="color:darkred;">About Me</h2>
+    <p>
+        Hii! I am <b>Priyanshi</b>, a <i>B.Tech student</i> with a passion for <u>coding and technology</u>.  
+        I love solving problems and building creative projects that make life easier.  
+        My goal is to grow into a professional software engineer while exploring new technologies.
+    </p>
+    <hr>
+</section>
+     
+<section>
+
+<!--Part 5: Education Section (with Table)
+Task 6: Create a table with inline styling.
+Use <table> with border and cell padding.
+First row should be <th> headings: Year, Degree, Institute.
+Next rows: your education details.-->
+    <h2 style="color:darkred;">Education</h2>
+    <table style="border:1px solid black; border-collapse:collapse; width:80%;">
+        <tr>
+            <th style="border:1px solid black; padding:8px;">Year</th>
+            <th style="border:1px solid black; padding:8px;">Degree</th>
+            <th style="border:1px solid black; padding:8px;">Institute</th>
+        </tr>
+        <tr>
+            <td style="border:1px solid black; padding:8px;">2025 - Present</td>
+            <td style="border:1px solid black; padding:8px;">B.Tech CSE 2nd Year</td>
+            <td style="border:1px solid black; padding:8px;">GLA UNIVERSITY</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid black; padding:8px;">2024</td>
+            <td style="border:1px solid black; padding:8px;">Class XII</td>
+            <td style="border:1px solid black; padding:8px;">BDKIC</td>
+        </tr>
+        <tr>
+            <td style="border:1px solid black; padding:8px;">2022</td>
+            <td style="border:1px solid black; padding:8px;">Class X</td>
+            <td style="border:1px solid black; padding:8px;">Sant Shree Narhari Das Higher Secondory school</td>
+        </tr>
+    </table>
+    <hr>
+</section>
+
+<section>
+
+<!--Part 6: Skills
+Task 7: Add skills using <ul> or <ol>.
+ (Optional: Use <progress> or <meter> for skill level).-->
+    <h2 style="color:darkred;">Skills</h2>
+    <ul>
+        <li>Java Programming <progress value="50" max="100"></progress></li>
+        <li>HTML & CSS <progress value="70" max="100"></progress></li>
+        <li>Problem Solving <progress value="85" max="100"></progress></li>
+        <li>C Programming <Progress value="70" max="100"></Progress></li>
+    </ul>
+    <hr>
+    </section>
+
+    <section>
+
+<!--Part 7: Hobbies
+Task 8: Add hobbies in a list with emojis or icons.-->
+    <h2 style="color:darkred;">Hobbies</h2>
+    <ul>
+        <li>📖 Reading Books</li>
+        <li>🎶 Listening to Music</li>
+        <li>💻 Coding</li>
+        
+    </ul>
+    <hr>
+</section>
+<section id="time_table">
+  <style>
+    #time_table {
+      max-width: 1100px;
+      margin: 40px auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+    }
+
+    #time_table caption {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #3a0b53;
+      color: white;
+      border-radius: 6px 6px 0 0;
+    }
+
+    #time_table table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    #time_table th,
+    #time_table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    #time_table thead th {
+      background: #e6f0ea;
+      font-weight: bold;
+    }
+
+    #time_table tbody tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    #time_table tbody tr:hover {
+      background: #f1f9f6;
+      transition: 0.3s;
+    }
+
+    #time_table tfoot td {
+      text-align: center;
+      font-weight: bold;
+      background: #481038;
+      color: white;
+    }
+
+    .highlight {
+      background: #c90a70 !important;
+      font-weight: bold;
+    }
+
+    /* Subject legend styling */
+    #time_table .legend-table th {
+      background: #a51972;
+      color: white;
+    }
+
+    #time_table .legend-table td {
+      font-size: 14px;
+    }
+  </style>
+
+  <!-- MAIN TIMETABLE -->
+  <table>
+    <caption>GLA UNIVERSITY, MATHURA - Time Table (Odd Semester Programme)</caption>
+    <thead>
+      <tr>
+        <th colspan="11">
+          Institute of Engineering & Technology | Computer Engineering & Applications | B.Tech (CSE)<br>
+          Section: 2FB | Semester: III | Class Advisor: Dr. Neetu Agrawal (EC) | Session: 2025-26 | w.e.f. 04/Aug/2025
+        </th>
+      </tr>
+      <tr>
+        <th>Day / Lecture #</th>
+        <th>1<br>08:00-09:00</th>
+        <th>2<br>09:00-10:00</th>
+        <th>3<br>10:00-11:00</th>
+        <th>4<br>11:00-12:00</th>
+        <th>5<br>LUNCH TIME</th>
+        <th>6<br>01:00-02:00</th>
+        <th>7<br>02:00-03:00</th>
+        <th>8<br>03:00-04:00</th>
+        <th>9<br>04:00-05:00</th>
+        <th>10<br>05:00-06:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>BCSC0801<br>ABVIII-405</td>
+        <td>BCSC0801<br>ABVIII-405</td>
+        <td>BCSE0813<br>ABVIII-405</td>
+        <td>BCSE0813<br>ABVIII-405</td>
+        <td class="highlight">LUNCHTIME<br></td>
+        <td>BELH0020<br>ABVIII-405</td>
+        <td>BCSC1003<br>ABVIII-405</td>
+        <td>BCSC1003<br>ABVIII-405</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>BCSC 0802<br>ABI-204</td>
+        <td>BCSC 0802<br>ABI-204</td>
+        <td>BELH0020<br>ABVIII-405</td>
+        <td>BCSE 0031 <br>ABVIII-405
+        </td>
+        <td class="highlight">LUNCHTIME<br></td>
+        <td>BCSE 1010<br>ABI-423</td>
+        <td></td>
+        <td>BCSC 1003 <br> ABVIII-405
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>BCSC 1002<br>ABVIII-405</td>
+        <td>BCSC 1002<br>ABVIII-405</td>
+        <td >BCSC 1005<br>ABVIII-405
+          
+        </td>
+        <td>BCSE 0031<br>ABVIII-405</td>
+        <td class="highlight">LUNCHTIME<br></td>
+        <td>PCPH 0001<br>ABVIII-211
+          
+        </td>
+        <td>BELH 0020 <br> ABVIII-204</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td >BCSC 1002 <br> ABVIII-419</td>
+        </td>
+        <td>BCSC 1002 <br> ABVIII-419</td>
+        <td>PCPH 0001<br>ABVIII-419</td>
+        <td>BCSC 1005<br>ABVIII-405</td>
+        <td class="highlight">LUNCHTIME<br></td>
+        <td>BCSC 1010 <br>ABI-423</td>
+        <td>BCSC 1003 <br>ABVIII-405 </td>
+        <td>BELH <br>ABVIII-404 </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>BCSE 0031</td>
+        <td></td>
+        <td>BCSC 0804<br>ABI-5005</td>
+        <td>BCSE 0804<br>ABII-5005</td>
+        <td class="highlight">LUNCHTIME<br></td>
+        <td>BSCS 1005 <br>AB1-423 <br>
+          
+        </td>
+        <td> BSCS 1010 <br>AB1-423 </td>
+        <td>FB3 BSCS 1010 <br>AB1-423</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td colspan="10"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="11">End of Timetable | Total Subjects: <b>7</b> | Total Working Hours: <b>34</b></td>
+      </tr>
+    </tfoot>
+  </table>
+
+</section>
+
+<Section>
+<!--Part 8: Footer
+Task 9: Add a footer with copyright (&copy; 2025 Your Name).-->
+    <footer style="text-align:center; margin-top:20px; font-size:14px; color:gray;">
+        &copy; 2025 Priyanshi.
+    </footer>
+
+</body>
+</html>
