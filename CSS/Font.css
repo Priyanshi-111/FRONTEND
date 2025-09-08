@@ -1,0 +1,16 @@
+
+p {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+p2{
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--ink);
+    margin-bottom: 1.6rem;
+    opacity: 0.9;
+    font-weight: 400;
+    text-align: center;
+    text-justify: inter-word;
+
+}
