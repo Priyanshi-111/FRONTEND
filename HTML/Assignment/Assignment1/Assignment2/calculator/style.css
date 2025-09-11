@@ -1,22 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Grid Calculator UI (Demo)</title>
-<style>
-  :root{
-    --bg:#0f172a; --panel:#0b1220; --accent:#10b981; --muted:#94a3b8;
+:root{
+    --bg:#0f172a; --panel:#0b122d; --accent:#10b981; --muted:#94a3b8;
     --btn:#1f2937; --btn-op:#ef4444; --gap:10px;
-  }
-  body{
-    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
-    background: linear-gradient(180deg,#071029,#0b1220); font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    color:#e6eef8;
-  }
 
-  .calculator{
-    width: min(480px, 96vw);
+}
+body{ 
+    margin: 0;min-height: 100vh;display: flex;justify-content: center;
+    background: linear-gradient(180eg,#07172a,#091827);font-family: system-ui, segoe UI,Robot,"Helvetica Neue",Arial;
+    color: #e6eef8;
+
+}
+.calculator{
+    width: min(400px,90vw);
     background: linear-gradient(180deg,#07172a,#091827);
     padding:18px;
     border-radius:14px;
@@ -25,9 +19,7 @@
     grid-template-columns: repeat(4, minmax(60px, 1fr));   /* 4 columns */
     grid-template-rows: minmax(72px, auto) repeat(5, 64px); /* 1 display row + 5 button rows */
     gap: var(--gap);
-  }
-
-  /* Display */
+}
   .display{
     grid-column: 1 / -1;   /* full width */
     background: linear-gradient(90deg,#0b1220,#07122a);
@@ -62,5 +54,4 @@
   .span-2 { grid-column: span 2; }
 
   /* small visual tweaks for clarity */
-  .btn.clear { background: #334155; color: #f8fafc; font-weight:
-    600; }
+  .btn.clear { background: #334155; color: #f8fafc; font-weight:600; }
